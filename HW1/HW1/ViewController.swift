@@ -1,18 +1,26 @@
-//
-//  ViewController.swift
-//  HW1
-//
-//  Created by Student on 5/3/17.
-//  Copyright © 2017 Student. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var helloWorldLabel: UILabel!
-// All the buttons. They all change the text's color
+
+    
     @IBAction func redButton(_ sender: Any) {
         helloWorldLabel.textColor = UIColor.red;
+    }
+    @IBAction func orangeButton(_ sender: Any) {
+        helloWorldLabel.textColor = UIColor.orange;
+    }
+    @IBAction func yellowButton(_ sender: Any) {
+        helloWorldLabel.textColor = UIColor.yellow;
+    }
+    @IBAction func greenButton(_ sender: Any) {
+        helloWorldLabel.textColor = UIColor.green;
+    }
+    @IBAction func blueButton(_ sender: Any) {
+        helloWorldLabel.textColor = UIColor.blue;
+    }
+    @IBAction func purpleButton(_ sender: Any) {
+        helloWorldLabel.textColor = UIColor.purple;
     }
     @IBAction func resetButton(_ sender: Any) {
         helloWorldLabel.textColor = UIColor.black;
@@ -20,19 +28,11 @@ class ViewController: UIViewController {
     
     
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
-
